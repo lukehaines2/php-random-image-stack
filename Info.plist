@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIdentifier</key>
+	<string>com.stacks4stacks.stacks.randomimage</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.0</string>
+	<key>CFBundleVersion</key>
+	<string>100</string>
+	<key>RWAddonAuthor</key>
+	<string>Stacks4Stacks</string>
+	<key>RWAddonManagerIconAsset</key>
+	<string>icon</string>
+	<key>RWAddonSupportURL</key>
+	<string>https://stacks4stacks.com/support/</string>
+	<key>SUFeedURL</key>
+	<string>https://stacks4stacks.com/appcast/appcast.php</string>
+	<key>author</key>
+	<string>Stacks4Stacks</string>
+	<key>cssFile</key>
+	<string>styles.css</string>
+	<key>customItems</key>
+	<array>
+		<dict>
+			<key>default</key>
+			<string>freestyle</string>
+			<key>group</key>
+			<string>RandomImage Settings</string>
+			<key>id</key>
+			<string>placement</string>
+			<key>items</key>
+			<array>
+				<dict>
+					<key>title</key>
+					<string>ExtraContent</string>
+					<key>value</key>
+					<string>extracontent</string>
+				</dict>
+				<dict>
+					<key>title</key>
+					<string>FreeStyle (default)</string>
+					<key>value</key>
+					<string>freestyle</string>
+				</dict>
+				<dict>
+					<key>title</key>
+					<string>Normal Page Flow</string>
+					<key>value</key>
+					<string>normal</string>
+				</dict>
+			</array>
+			<key>title</key>
+			<string>Placement</string>
+			<key>toolTip</key>
+			<string>Where the RandomImage stack should be placed on the page.</string>
+			<key>type</key>
+			<string>select</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<string>5</string>
+			<key>enable</key>
+			<dict>
+				<key>id</key>
+				<string>placement</string>
+				<key>value</key>
+				<string>extracontent</string>
+			</dict>
+			<key>group</key>
+			<string>RandomImage Settings</string>
+			<key>id</key>
+			<string>ec_number</string>
+			<key>title</key>
+			<string>ExtraContent</string>
+			<key>toolTip</key>
+			<string>Enter the number of the ExtraContent container to target.</string>
+			<key>type</key>
+			<string>number</string>
+		</dict>
+		<dict>
+			<key>group</key>
+			<string>RandomImage Settings</string>
+			<key>type</key>
+			<string>divider</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<string>https://example.com/resources/random_images/</string>
+			<key>group</key>
+			<string>RandomImage Settings</string>
+			<key>id</key>
+			<string>dir_path</string>
+			<key>title</key>
+			<string>Path</string>
+			<key>toolTip</key>
+			<string>The path to the directory storing the collection of random images.</string>
+			<key>type</key>
+			<string>link</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<string>image-</string>
+			<key>group</key>
+			<string>RandomImage Settings</string>
+			<key>id</key>
+			<string>prefix</string>
+			<key>title</key>
+			<string>Prefix</string>
+			<key>toolTip</key>
+			<string>The prefix of the image file names.</string>
+			<key>type</key>
+			<string>input</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<string>.jpg</string>
+			<key>group</key>
+			<string>RandomImage Settings</string>
+			<key>id</key>
+			<string>extension</string>
+			<key>title</key>
+			<string>Extension</string>
+			<key>toolTip</key>
+			<string>The extension of the image file.</string>
+			<key>type</key>
+			<string>input</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<array>
+				<string>1</string>
+				<string>10</string>
+			</array>
+			<key>group</key>
+			<string>RandomImage Settings</string>
+			<key>id</key>
+			<string>range_array</string>
+			<key>subtitles</key>
+			<array>
+				<string>Min</string>
+				<string>Max</string>
+			</array>
+			<key>title</key>
+			<string>Range</string>
+			<key>toolTip</key>
+			<string>The range array of random images to choose from.</string>
+			<key>type</key>
+			<string>number-2</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<string>My random banner image</string>
+			<key>group</key>
+			<string>RandomImage Settings</string>
+			<key>id</key>
+			<string>alt_text</string>
+			<key>title</key>
+			<string>ALT Attribute</string>
+			<key>toolTip</key>
+			<string>The ALT attribute description for the image.</string>
+			<key>type</key>
+			<string>multi-4</string>
+		</dict>
+		<dict>
+			<key>group</key>
+			<string>RandomImage Settings</string>
+			<key>type</key>
+			<string>divider</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<false/>
+			<key>falseValue</key>
+			<string>false</string>
+			<key>group</key>
+			<string>RandomImage Settings</string>
+			<key>id</key>
+			<string>retina</string>
+			<key>title</key>
+			<string>Optimise For Retina Displays</string>
+			<key>toolTip</key>
+			<string>When enabled, retina display optimised images will be randomised.</string>
+			<key>trueValue</key>
+			<string>true</string>
+			<key>type</key>
+			<string>checkbox</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<string>@2x.jpg</string>
+			<key>enable</key>
+			<dict>
+				<key>id</key>
+				<string>retina</string>
+				<key>value</key>
+				<true/>
+			</dict>
+			<key>group</key>
+			<string>RandomImage Settings</string>
+			<key>id</key>
+			<string>retina_extension</string>
+			<key>title</key>
+			<string>Retina Extension</string>
+			<key>toolTip</key>
+			<string>The file extension for retina display optimised images.</string>
+			<key>type</key>
+			<string>input</string>
+		</dict>
+		<dict>
+			<key>group</key>
+			<string>RandomImage Settings</string>
+			<key>type</key>
+			<string>divider</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<false/>
+			<key>falseValue</key>
+			<string>false</string>
+			<key>group</key>
+			<string>RandomImage Settings</string>
+			<key>id</key>
+			<string>link</string>
+			<key>title</key>
+			<string>Apply A Link To The Image</string>
+			<key>toolTip</key>
+			<string>When enabled, a link can be applied to the image.</string>
+			<key>trueValue</key>
+			<string>true</string>
+			<key>type</key>
+			<string>checkbox</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<string></string>
+			<key>enable</key>
+			<dict>
+				<key>id</key>
+				<string>link</string>
+				<key>value</key>
+				<true/>
+			</dict>
+			<key>group</key>
+			<string>RandomImage Settings</string>
+			<key>id</key>
+			<string>link_address</string>
+			<key>title</key>
+			<string>Link Address</string>
+			<key>toolTip</key>
+			<string>The address for the image.</string>
+			<key>type</key>
+			<string>link</string>
+		</dict>
+	</array>
+	<key>group</key>
+	<string>Stacks4Stacks</string>
+	<key>helpURL</key>
+	<string>https://stacks4stacks.com/randomimage/</string>
+	<key>icon</key>
+	<string>icon</string>
+	<key>infoURL</key>
+	<string>https://stacks4stacks.com/randomimage/</string>
+	<key>minAPIVersion</key>
+	<string>10</string>
+	<key>missingURL</key>
+	<string>https://stacks4stacks.com/randomimage/</string>
+	<key>requiresPhp</key>
+	<true/>
+	<key>subtitle</key>
+	<string>Display images, at random</string>
+	<key>tags</key>
+	<array>
+		<string>Random</string>
+		<string>Image</string>
+		<string>Banner</string>
+		<string>FreeStyle</string>
+	</array>
+	<key>templates</key>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>template.html</string>
+			<key>type</key>
+			<string>html</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>RandomImage</string>
+</dict>
+</plist>
