@@ -15,7 +15,17 @@
   %[if %("%id=placement%" == "freestyle")% ]%<div id="random-image-container">%[endif]%
   %[if %("%id=placement%" == "normal")% ]%<div>%[endif]%
     %[if %("%id=link%" == "true")% ]%%id=link_address%%[endif]%
-      <img style="max-width: 100%; border: 1px solid red; max-height: 312px" src="%id=dir_path -href%%id=prefix%<?php echo rand(%id=range_array[0]%,%id=range_array[1]%)?>%id=extension%" alt="%id=alt_text%" %[if %("%id=retina%" == "true")% ]%srcset="%id=dir_path -href%%id=prefix%<?php echo rand(%id=range_array[0]%,%id=range_array[1]%)?>%id=retina_extension% 2x"%[endif]%>
+      <img style="max-width: 100%; border: 1px solid red; max-height: 312px" 
+      src="%id=dir_path -href%%id=prefix%<?php echo rand(%id=range_array[0]%,%id=range_array[1]%)?>%id=extension%" alt="%id=alt_text%" %[if %("%id=retina%" == "true")% ]%srcset="%id=dir_path -href%%id=prefix%<?php echo rand(%id=range_array[0]%,%id=range_array[1]%)?>%id=retina_extension% 2x"%[endif]%>
     %[if %("%id=link%" == "true")% ]%%id=link_address%%[endif]%
   </div>
 %%[[endif]]%%
+
+<?php
+  $img_ids_array = array(range(%id=range_array[0]%, %id=range_array[1]%));
+  echo '<script>console.log("luke was here")</script>';
+  // $suffle($img_ids_array);
+  // for ($i=0; $i<11; $i++) {
+  //   echo '<img src="'.$img_ids_array[$i].'"><br>';
+  // }
+?>
