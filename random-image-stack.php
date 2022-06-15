@@ -12,10 +12,10 @@
 
 %%[[if !edit]]%%
   %[if %("%id=placement%" == "extracontent")% ]%<div id="myExtraContent%id=ec_number%">%[endif]%
-  %[if %("%id=placement%" == "freestyle")% ]%<div id="fs">%[endif]%
+  %[if %("%id=placement%" == "freestyle")% ]%<div id="random-image-container">%[endif]%
   %[if %("%id=placement%" == "normal")% ]%<div>%[endif]%
     %[if %("%id=link%" == "true")% ]%%id=link_address%%[endif]%
-      <img src="%id=dir_path -href%%id=prefix%<?php echo rand(%id=range_array[0]%,%id=range_array[1]%)?>%id=extension%" alt="%id=alt_text%" %[if %("%id=retina%" == "true")% ]%srcset="%id=dir_path -href%%id=prefix%<?php echo rand(%id=range_array[0]%,%id=range_array[1]%)?>%id=retina_extension% 2x"%[endif]%>
+      <img style="max-width: 100%; border: 1px solid red; max-height: 312px" src="%id=dir_path -href%%id=prefix%<?php echo rand(%id=range_array[0]%,%id=range_array[1]%)?>%id=extension%" alt="%id=alt_text%" %[if %("%id=retina%" == "true")% ]%srcset="%id=dir_path -href%%id=prefix%<?php echo rand(%id=range_array[0]%,%id=range_array[1]%)?>%id=retina_extension% 2x"%[endif]%>
     %[if %("%id=link%" == "true")% ]%%id=link_address%%[endif]%
   </div>
 %%[[endif]]%%
