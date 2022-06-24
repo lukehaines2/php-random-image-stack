@@ -8,7 +8,7 @@
       foreach($img_ids_array as $key => $val) {
         if (!is_array($_SESSION['img'])) {
             return $val;
-        } elseif (count($_SESSION['img']) >= count($img)) {
+        } elseif (count($_SESSION['img']) >= count($img_ids_array)) {
             $_SESSION['img'] = array();
         }
         if (is_array($_SESSION['img']) && !in_array($val, $_SESSION['img'])) {
