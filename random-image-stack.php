@@ -22,10 +22,18 @@
 %%[[endif]]%%
 
 <?php
+  include 'session.php';
   $img_ids_array = array(range(%id=range_array[0]%, %id=range_array[1]%));
-  echo '<script>console.log("luke was here")</script>';
+  echo '<script>console.log("luke was here", ' . json_encode($img_ids_array) . ')</script>';
   // $suffle($img_ids_array);
   // for ($i=0; $i<11; $i++) {
   //   echo '<img src="'.$img_ids_array[$i].'"><br>';
   // }
+
+  session_start();
+
+  $_SESSION['test'] = 42;
+  $test = 43;
+  echo $_SESSION['test'];
+  echo '<script>console.log("luke was here", ' . json_encode($_SESSION['test']) . ')</script>';
 ?>
